@@ -1,0 +1,1319 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/components/ui/alert.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Alert",
+    ()=>Alert,
+    "AlertDescription",
+    ()=>AlertDescription,
+    "AlertTitle",
+    ()=>AlertTitle
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/class-variance-authority/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-client] (ecmascript)");
+;
+;
+;
+const alertVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cva"])([
+    'relative w-full rounded-lg border px-4 py-3 text-sm grid grid-cols-[0_1fr] gap-y-0.5 items-start',
+    'has-[>svg]:grid-cols-[calc(var(--spacing)*4)_1fr] has-[>svg]:gap-x-3 [&>svg]:size-4 [&>svg]:translate-y-0.5 [&>svg]:text-current'
+], {
+    variants: {
+        variant: {
+            default: 'bg-card text-card-foreground',
+            destructive: [
+                'text-destructive-foreground bg-destructive border-destructive-border',
+                '[&>svg]:text-current *:data-[slot=alert-description]:text-destructive-foreground/90'
+            ]
+        }
+    },
+    defaultVariants: {
+        variant: 'default'
+    }
+});
+function Alert(param) {
+    let { className, variant, ...props } = param;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        "data-slot": "alert",
+        role: "alert",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])(alertVariants({
+            variant
+        }), className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/alert.tsx",
+        lineNumber: 32,
+        columnNumber: 5
+    }, this);
+}
+_c = Alert;
+function AlertTitle(param) {
+    let { className, ...props } = param;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        "data-slot": "alert-title",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('col-start-2 line-clamp-1 min-h-4 font-medium tracking-tight', className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/alert.tsx",
+        lineNumber: 43,
+        columnNumber: 5
+    }, this);
+}
+_c1 = AlertTitle;
+function AlertDescription(param) {
+    let { className, ...props } = param;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        "data-slot": "alert-description",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('text-muted-foreground col-start-2 grid justify-items-start gap-1 text-sm [&_p]:leading-relaxed', className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/alert.tsx",
+        lineNumber: 53,
+        columnNumber: 5
+    }, this);
+}
+_c2 = AlertDescription;
+;
+var _c, _c1, _c2;
+__turbopack_context__.k.register(_c, "Alert");
+__turbopack_context__.k.register(_c1, "AlertTitle");
+__turbopack_context__.k.register(_c2, "AlertDescription");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/alert-toast.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "toastAlert",
+    ()=>toastAlert
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/sonner/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$Warning$2e$es$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@phosphor-icons/react/dist/ssr/Warning.es.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/alert.tsx [app-client] (ecmascript)");
+'use client';
+;
+;
+;
+;
+function toastAlert(toast) {
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].custom((id)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AlertToast, {
+            id: id,
+            title: toast.title,
+            description: toast.description
+        }, void 0, false, {
+            fileName: "[project]/components/alert-toast.tsx",
+            lineNumber: 16,
+            columnNumber: 13
+        }, this), {
+        duration: 10_000
+    });
+}
+function AlertToast(props) {
+    const { title, description, id } = props;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Alert"], {
+        onClick: ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].dismiss(id),
+        className: "bg-accent",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$Warning$2e$es$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WarningIcon"], {
+                weight: "bold"
+            }, void 0, false, {
+                fileName: "[project]/components/alert-toast.tsx",
+                lineNumber: 26,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AlertTitle"], {
+                children: title
+            }, void 0, false, {
+                fileName: "[project]/components/alert-toast.tsx",
+                lineNumber: 27,
+                columnNumber: 7
+            }, this),
+            description && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AlertDescription"], {
+                children: description
+            }, void 0, false, {
+                fileName: "[project]/components/alert-toast.tsx",
+                lineNumber: 28,
+                columnNumber: 23
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/alert-toast.tsx",
+        lineNumber: 25,
+        columnNumber: 5
+    }, this);
+}
+_c = AlertToast;
+var _c;
+__turbopack_context__.k.register(_c, "AlertToast");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/session-view.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>SessionView
+]);
+'use client';
+function SessionView(param) {
+    let { sessionStarted, disabled, onHangUp } = param;
+    // Render nothing; the call experience is handled via the CallModal overlay
+    return null;
+}
+_c = SessionView;
+var _c;
+__turbopack_context__.k.register(_c, "SessionView");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/ui/sonner.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Toaster",
+    ()=>Toaster
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-themes/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/sonner/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$Warning$2e$es$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@phosphor-icons/react/dist/ssr/Warning.es.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+;
+const Toaster = (param)=>{
+    let { ...props } = param;
+    _s();
+    const { theme = 'system' } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Toaster"], {
+        theme: theme,
+        className: "toaster group",
+        position: "top-center",
+        icons: {
+            warning: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$phosphor$2d$icons$2f$react$2f$dist$2f$ssr$2f$Warning$2e$es$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WarningIcon"], {
+                weight: "bold"
+            }, void 0, false, {
+                fileName: "[project]/components/ui/sonner.tsx",
+                lineNumber: 16,
+                columnNumber: 18
+            }, void 0)
+        },
+        style: {
+            '--normal-bg': 'var(--popover)',
+            '--normal-text': 'var(--popover-foreground)',
+            '--normal-border': 'var(--border)'
+        },
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/sonner.tsx",
+        lineNumber: 11,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0));
+};
+_s(Toaster, "bbCbBsvL7+LiaR8ofHlkcwveh/Y=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"]
+    ];
+});
+_c = Toaster;
+;
+var _c;
+__turbopack_context__.k.register(_c, "Toaster");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/welcome.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// @ts-nocheck
+__turbopack_context__.s([
+    "default",
+    ()=>Welcome
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+/* eslint-disable @next/next/no-img-element */ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+function Welcome(param) {
+    let { startButtonText = 'Talk to Agent', onStartCall, disabled, onAnalyzed } = param;
+    _s();
+    const [selectedFile, setSelectedFile] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [isSubmitting, setIsSubmitting] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [analysis, setAnalysis] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const canStart = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "Welcome.useMemo[canStart]": ()=>(analysis === null || analysis === void 0 ? void 0 : analysis.success) === true
+    }["Welcome.useMemo[canStart]"], [
+        analysis
+    ]);
+    const showStartDisabled = disabled || !canStart;
+    const onFileChange = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "Welcome.useCallback[onFileChange]": (e)=>{
+            var _e_target_files;
+            setError(null);
+            setAnalysis(null);
+            var _e_target_files_;
+            const file = (_e_target_files_ = (_e_target_files = e.target.files) === null || _e_target_files === void 0 ? void 0 : _e_target_files[0]) !== null && _e_target_files_ !== void 0 ? _e_target_files_ : null;
+            if (file && file.type !== 'image/png') {
+                setError('Please upload a .png file.');
+                setSelectedFile(null);
+                return;
+            }
+            setSelectedFile(file !== null && file !== void 0 ? file : null);
+        }
+    }["Welcome.useCallback[onFileChange]"], []);
+    const onSubmit = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "Welcome.useCallback[onSubmit]": async ()=>{
+            if (!selectedFile) {
+                setError('Please choose a .png file first.');
+                return;
+            }
+            setIsSubmitting(true);
+            setError(null);
+            setAnalysis(null);
+            try {
+                const form = new FormData();
+                form.append('image', selectedFile);
+                const resp = await fetch('/api/analyze', {
+                    method: 'POST',
+                    body: form
+                });
+                const json = await resp.json();
+                if (!resp.ok || !json.success) {
+                    setError(json.message || json.error || 'Failed to analyze the image.');
+                } else {
+                    setAnalysis(json);
+                    try {
+                        onAnalyzed === null || onAnalyzed === void 0 ? void 0 : onAnalyzed(json.id, json.data);
+                    } catch (e) {}
+                }
+            } catch (e) {
+                var _e_message;
+                setError((_e_message = e === null || e === void 0 ? void 0 : e.message) !== null && _e_message !== void 0 ? _e_message : 'Network error');
+            } finally{
+                setIsSubmitting(false);
+            }
+        }
+    }["Welcome.useCallback[onSubmit]"], [
+        selectedFile
+    ]);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+        className: "min-h-dvh bg-[radial-gradient(ellipse_at_top,rgba(34,211,238,0.10),transparent_55%),linear-gradient(to_bottom,#0b1220,#0b1220)] text-slate-100",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mx-auto max-w-6xl px-6 py-10",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+                    className: "flex items-center justify-between",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-3",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "grid h-9 w-9 place-items-center rounded-xl bg-white/10",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-xs font-bold tracking-wide",
+                                    children: "MV"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/welcome.tsx",
+                                    lineNumber: 98,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/welcome.tsx",
+                                lineNumber: 97,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "font-semibold tracking-tight",
+                                children: "MedVoice"
+                            }, void 0, false, {
+                                fileName: "[project]/components/welcome.tsx",
+                                lineNumber: 100,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/welcome.tsx",
+                        lineNumber: 96,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/welcome.tsx",
+                    lineNumber: 95,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                    className: "mt-16 grid place-items-center gap-10",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "max-w-2xl text-center",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                    className: "text-4xl leading-tight font-bold md:text-5xl",
+                                    children: [
+                                        "Understand your ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-cyan-300",
+                                            children: "medical documents"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/welcome.tsx",
+                                            lineNumber: 108,
+                                            columnNumber: 31
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/welcome.tsx",
+                                    lineNumber: 107,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "mt-5 text-slate-300/90",
+                                    children: "A voice agent that explains labs, prescriptions, and doctor notes—in plain language. Private, simple, and secure."
+                                }, void 0, false, {
+                                    fileName: "[project]/components/welcome.tsx",
+                                    lineNumber: 110,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "mt-8 flex flex-col gap-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "rounded-2xl border border-white/10 bg-white/5 p-4 mx-auto max-w-3xl",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                    className: "block text-sm text-slate-300/90",
+                                                    children: "Upload your medical report (.png only)"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/welcome.tsx",
+                                                    lineNumber: 117,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "mt-2 flex items-center gap-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                            type: "file",
+                                                            accept: "image/png",
+                                                            onChange: onFileChange,
+                                                            className: "max-w-xs text-sm file:mr-4 file:rounded-md file:border-0 file:bg-white file:px-3 file:py-2 file:text-slate-900 file:hover:bg-white/90"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/welcome.tsx",
+                                                            lineNumber: 119,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                            onClick: onSubmit,
+                                                            disabled: !selectedFile || isSubmitting,
+                                                            className: "inline-flex items-center justify-center rounded-md bg-cyan-400 px-4 py-2 text-sm font-medium text-slate-900 shadow transition hover:bg-cyan-300 focus:ring-4 focus:ring-cyan-500 focus:outline-none disabled:cursor-not-allowed disabled:opacity-60",
+                                                            children: isSubmitting ? 'Analyzing…' : 'Analyze'
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/welcome.tsx",
+                                                            lineNumber: 125,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/welcome.tsx",
+                                                    lineNumber: 118,
+                                                    columnNumber: 17
+                                                }, this),
+                                                error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "mt-2 text-sm text-red-300",
+                                                    children: error
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/welcome.tsx",
+                                                    lineNumber: 133,
+                                                    columnNumber: 27
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/welcome.tsx",
+                                            lineNumber: 116,
+                                            columnNumber: 15
+                                        }, this),
+                                        analysis && analysis.success && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.02] p-5 shadow-inner mx-auto max-w-4xl",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex flex-wrap items-center justify-between gap-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex items-center gap-3",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                    className: "text-lg font-semibold tracking-tight",
+                                                                    children: "Report analysis"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/welcome.tsx",
+                                                                    lineNumber: 141,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "rounded-md border border-cyan-400/30 bg-cyan-400/10 px-2 py-0.5 text-xs font-medium text-cyan-300",
+                                                                    children: analysis.data.type
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/welcome.tsx",
+                                                                    lineNumber: 142,
+                                                                    columnNumber: 23
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/components/welcome.tsx",
+                                                            lineNumber: 140,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex items-center gap-2",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "text-xs text-slate-300",
+                                                                    children: "ID"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/welcome.tsx",
+                                                                    lineNumber: 147,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
+                                                                    className: "rounded-md bg-white/10 px-2 py-1 font-mono text-sm text-cyan-200",
+                                                                    children: analysis.id
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/welcome.tsx",
+                                                                    lineNumber: 148,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                    onClick: ()=>{
+                                                                        var _navigator_clipboard;
+                                                                        return (_navigator_clipboard = navigator.clipboard) === null || _navigator_clipboard === void 0 ? void 0 : _navigator_clipboard.writeText(analysis.id).catch(()=>{});
+                                                                    },
+                                                                    className: "rounded-md border border-white/10 px-2 py-1 text-xs text-slate-200 hover:bg-white/10",
+                                                                    children: "Copy"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/welcome.tsx",
+                                                                    lineNumber: 151,
+                                                                    columnNumber: 23
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/components/welcome.tsx",
+                                                            lineNumber: 146,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/welcome.tsx",
+                                                    lineNumber: 139,
+                                                    columnNumber: 19
+                                                }, this),
+                                                analysis.data.concerns.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "mt-4 rounded-xl border border-amber-400/20 bg-amber-400/5 p-4",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "mb-2 flex items-center gap-2 text-amber-300",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "inline-block h-2 w-2 rounded-full bg-amber-300"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/welcome.tsx",
+                                                                    lineNumber: 164,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "text-sm font-semibold",
+                                                                    children: "Concerns"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/welcome.tsx",
+                                                                    lineNumber: 165,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/components/welcome.tsx",
+                                                            lineNumber: 163,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                            className: "ml-4 list-disc text-sm text-amber-100/90",
+                                                            children: analysis.data.concerns.map((c, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    children: c
+                                                                }, idx, false, {
+                                                                    fileName: "[project]/components/welcome.tsx",
+                                                                    lineNumber: 169,
+                                                                    columnNumber: 27
+                                                                }, this))
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/welcome.tsx",
+                                                            lineNumber: 167,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/welcome.tsx",
+                                                    lineNumber: 162,
+                                                    columnNumber: 21
+                                                }, this),
+                                                analysis.data.levels.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "mt-5 grid gap-4 md:grid-cols-2",
+                                                    children: analysis.data.levels.map((lvl, i)=>{
+                                                        var _lvl_possible_causes;
+                                                        const isAbnormal = (lvl.your_level_means || '').toLowerCase().includes('above') || (lvl.your_level_means || '').toLowerCase().includes('below') || ((_lvl_possible_causes = lvl.possible_causes) !== null && _lvl_possible_causes !== void 0 ? _lvl_possible_causes : '') !== '';
+                                                        var _lvl_reference_range;
+                                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "rounded-xl border p-4 ".concat(isAbnormal ? 'border-rose-400/20 bg-rose-400/5' : 'border-emerald-400/20 bg-emerald-400/5'),
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex items-center justify-between",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "text-base font-semibold text-slate-100",
+                                                                            children: lvl.name
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/welcome.tsx",
+                                                                            lineNumber: 192,
+                                                                            columnNumber: 31
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "rounded-md bg-white/10 px-2 py-0.5 text-xs text-slate-200",
+                                                                            children: lvl.value
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/welcome.tsx",
+                                                                            lineNumber: 193,
+                                                                            columnNumber: 31
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/components/welcome.tsx",
+                                                                    lineNumber: 191,
+                                                                    columnNumber: 29
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "mt-1 text-xs text-slate-300",
+                                                                    children: [
+                                                                        "Range: ",
+                                                                        (_lvl_reference_range = lvl.reference_range) !== null && _lvl_reference_range !== void 0 ? _lvl_reference_range : 'N/A'
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/components/welcome.tsx",
+                                                                    lineNumber: 195,
+                                                                    columnNumber: 29
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "mt-3 space-y-1 text-sm text-slate-200",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            children: lvl.what_it_is
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/welcome.tsx",
+                                                                            lineNumber: 198,
+                                                                            columnNumber: 31
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "font-medium",
+                                                                            children: lvl.your_level_means
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/welcome.tsx",
+                                                                            lineNumber: 199,
+                                                                            columnNumber: 31
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            children: lvl.why_it_matters
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/welcome.tsx",
+                                                                            lineNumber: 200,
+                                                                            columnNumber: 31
+                                                                        }, this),
+                                                                        lvl.possible_causes && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "text-slate-300",
+                                                                            children: [
+                                                                                "Possible causes: ",
+                                                                                lvl.possible_causes
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/components/welcome.tsx",
+                                                                            lineNumber: 202,
+                                                                            columnNumber: 33
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/components/welcome.tsx",
+                                                                    lineNumber: 197,
+                                                                    columnNumber: 29
+                                                                }, this)
+                                                            ]
+                                                        }, i, true, {
+                                                            fileName: "[project]/components/welcome.tsx",
+                                                            lineNumber: 183,
+                                                            columnNumber: 27
+                                                        }, this);
+                                                    })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/welcome.tsx",
+                                                    lineNumber: 177,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/welcome.tsx",
+                                            lineNumber: 137,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center justify-center gap-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    onClick: onStartCall,
+                                                    disabled: showStartDisabled,
+                                                    className: "inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 font-medium text-slate-900 shadow transition hover:shadow-lg focus:ring-4 focus:ring-cyan-500 focus:outline-none disabled:cursor-not-allowed disabled:opacity-60",
+                                                    children: startButtonText
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/welcome.tsx",
+                                                    lineNumber: 215,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: "#how-it-works",
+                                                    className: "text-slate-300 underline-offset-4 hover:text-white hover:underline",
+                                                    children: "How it works"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/welcome.tsx",
+                                                    lineNumber: 223,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/welcome.tsx",
+                                            lineNumber: 213,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/welcome.tsx",
+                                    lineNumber: 115,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "mt-6 text-xs text-slate-400",
+                                    children: "HIPAA-aware patterns • No data sold • Works on mobile/desktop"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/welcome.tsx",
+                                    lineNumber: 232,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/welcome.tsx",
+                            lineNumber: 106,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative"
+                        }, void 0, false, {
+                            fileName: "[project]/components/welcome.tsx",
+                            lineNumber: 237,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/welcome.tsx",
+                    lineNumber: 105,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                    id: "how-it-works",
+                    className: "mt-20 grid gap-6 md:grid-cols-3",
+                    children: [
+                        {
+                            title: 'Upload or Read',
+                            desc: 'Share a PDF/photo or read key lines aloud.'
+                        },
+                        {
+                            title: 'Ask Anything',
+                            desc: 'Symptoms, meds, risks—get clear, safe answers.'
+                        },
+                        {
+                            title: 'Follow-ups',
+                            desc: 'Ask follow-ups and save a summary for later.'
+                        }
+                    ].map((f)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "mb-4 h-9 w-9 rounded-lg bg-white/10"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/welcome.tsx",
+                                    lineNumber: 251,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "font-semibold",
+                                    children: f.title
+                                }, void 0, false, {
+                                    fileName: "[project]/components/welcome.tsx",
+                                    lineNumber: 252,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "mt-2 text-sm text-slate-300/90",
+                                    children: f.desc
+                                }, void 0, false, {
+                                    fileName: "[project]/components/welcome.tsx",
+                                    lineNumber: 253,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, f.title, true, {
+                            fileName: "[project]/components/welcome.tsx",
+                            lineNumber: 247,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/components/welcome.tsx",
+                    lineNumber: 241,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "pointer-events-none fixed bottom-6 right-6 z-40",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "pointer-events-auto animate-[floaty_3s_ease-in-out_infinite] rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-200 shadow-lg backdrop-blur",
+                        children: [
+                            "📱 Call from your SIM — ",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "font-semibold",
+                                children: "coming soon"
+                            }, void 0, false, {
+                                fileName: "[project]/components/welcome.tsx",
+                                lineNumber: 261,
+                                columnNumber: 37
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/welcome.tsx",
+                        lineNumber: 260,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/welcome.tsx",
+                    lineNumber: 259,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("style", {
+                    children: "\n@keyframes floaty { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }\n        "
+                }, void 0, false, {
+                    fileName: "[project]/components/welcome.tsx",
+                    lineNumber: 265,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+                    className: "mt-20 border-t border-white/10 pt-8 text-sm text-slate-400 text-center",
+                    children: [
+                        "© ",
+                        new Date().getFullYear(),
+                        " MedVoice. All rights reserved."
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/welcome.tsx",
+                    lineNumber: 270,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/welcome.tsx",
+            lineNumber: 93,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/welcome.tsx",
+        lineNumber: 92,
+        columnNumber: 5
+    }, this);
+}
+_s(Welcome, "AgvRCO4wSUPbOEgE5Ddmx82vu9w=");
+_c = Welcome;
+var _c;
+__turbopack_context__.k.register(_c, "Welcome");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/call-modal.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "CallModal",
+    ()=>CallModal
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-client] (ecmascript)");
+'use client';
+;
+;
+function CallModal(param) {
+    let { open, onHangUp } = param;
+    if (!open) return null;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "fixed inset-0 z-[100] grid place-items-center bg-black/60 px-4",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full max-w-md overflow-hidden rounded-2xl border border-white/10 bg-slate-900/95 shadow-2xl",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center justify-between bg-white/5 px-6 py-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "text-lg font-semibold text-slate-100",
+                                children: "MedVoice — Call"
+                            }, void 0, false, {
+                                fileName: "[project]/components/call-modal.tsx",
+                                lineNumber: 14,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-xs text-cyan-300",
+                                children: "Connected"
+                            }, void 0, false, {
+                                fileName: "[project]/components/call-modal.tsx",
+                                lineNumber: 15,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/call-modal.tsx",
+                        lineNumber: 13,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "relative m-6 grid h-36 w-auto place-items-center overflow-hidden rounded-xl bg-white/5",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex h-20 items-end gap-1",
+                            children: Array.from({
+                                length: 32
+                            }).map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('inline-block w-1 origin-bottom rounded-sm bg-cyan-300/80', 'animate-[wave_1.2s_ease-in-out_infinite]'),
+                                    style: {
+                                        animationDelay: "".concat(i % 10 * 0.06, "s"),
+                                        height: "".concat(8 + i * 7 % 48, "px")
+                                    }
+                                }, i, false, {
+                                    fileName: "[project]/components/call-modal.tsx",
+                                    lineNumber: 21,
+                                    columnNumber: 15
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/components/call-modal.tsx",
+                            lineNumber: 19,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/call-modal.tsx",
+                        lineNumber: 18,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center justify-center gap-3 bg-white/5 px-6 py-4",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: onHangUp,
+                            className: "rounded-full bg-red-500 px-5 py-2 text-sm font-semibold text-white shadow transition hover:bg-red-400 focus:outline-none focus:ring-4 focus:ring-red-600/40",
+                            children: "Hang Up"
+                        }, void 0, false, {
+                            fileName: "[project]/components/call-modal.tsx",
+                            lineNumber: 35,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/call-modal.tsx",
+                        lineNumber: 34,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/call-modal.tsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("style", {
+                children: "\n@keyframes wave { 0%,100%{ transform: scaleY(0.4)} 50%{ transform: scaleY(1)} }\n      "
+            }, void 0, false, {
+                fileName: "[project]/components/call-modal.tsx",
+                lineNumber: 44,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/call-modal.tsx",
+        lineNumber: 10,
+        columnNumber: 5
+    }, this);
+}
+_c = CallModal;
+var _c;
+__turbopack_context__.k.register(_c, "CallModal");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/hooks/useConnectionDetails.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>useConnectionDetails
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$jose$2f$dist$2f$webapi$2f$util$2f$decode_jwt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/jose/dist/webapi/util/decode_jwt.js [app-client] (ecmascript)");
+var _s = __turbopack_context__.k.signature();
+;
+;
+const ONE_MINUTE_IN_MILLISECONDS = 60 * 1000;
+function useConnectionDetails(appConfig) {
+    _s();
+    // Generate room connection details, including:
+    //   - A random Room name
+    //   - A random Participant name
+    //   - An Access Token to permit the participant to join the room
+    //   - The URL of the LiveKit server to connect to
+    //
+    // In real-world application, you would likely allow the user to specify their
+    // own participant name, and possibly to choose from existing rooms to join.
+    const [connectionDetails, setConnectionDetails] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const fetchConnectionDetails = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "useConnectionDetails.useCallback[fetchConnectionDetails]": async ()=>{
+            setConnectionDetails(null);
+            var _process_env_NEXT_PUBLIC_CONN_DETAILS_ENDPOINT;
+            const url = new URL((_process_env_NEXT_PUBLIC_CONN_DETAILS_ENDPOINT = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_CONN_DETAILS_ENDPOINT) !== null && _process_env_NEXT_PUBLIC_CONN_DETAILS_ENDPOINT !== void 0 ? _process_env_NEXT_PUBLIC_CONN_DETAILS_ENDPOINT : '/api/connection-details', window.location.origin);
+            let data;
+            try {
+                var _appConfig_sandboxId;
+                const res = await fetch(url.toString(), {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Sandbox-Id': (_appConfig_sandboxId = appConfig.sandboxId) !== null && _appConfig_sandboxId !== void 0 ? _appConfig_sandboxId : ''
+                    },
+                    body: JSON.stringify({
+                        room_config: appConfig.agentName ? {
+                            agents: [
+                                {
+                                    agent_name: appConfig.agentName
+                                }
+                            ]
+                        } : undefined
+                    })
+                });
+                data = await res.json();
+            } catch (error) {
+                console.error('Error fetching connection details:', error);
+                throw new Error('Error fetching connection details!');
+            }
+            setConnectionDetails(data);
+            return data;
+        }
+    }["useConnectionDetails.useCallback[fetchConnectionDetails]"], []);
+    // Note: do NOT auto-fetch on mount. We only fetch when the
+    // user explicitly starts a session (e.g., clicks "Talk to Agent").
+    const isConnectionDetailsExpired = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "useConnectionDetails.useCallback[isConnectionDetailsExpired]": ()=>{
+            const token = connectionDetails === null || connectionDetails === void 0 ? void 0 : connectionDetails.participantToken;
+            if (!token) {
+                return true;
+            }
+            const jwtPayload = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$jose$2f$dist$2f$webapi$2f$util$2f$decode_jwt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["decodeJwt"])(token);
+            if (!jwtPayload.exp) {
+                return true;
+            }
+            const expiresAt = new Date(jwtPayload.exp * 1000 - ONE_MINUTE_IN_MILLISECONDS);
+            const now = new Date();
+            return expiresAt <= now;
+        }
+    }["useConnectionDetails.useCallback[isConnectionDetailsExpired]"], [
+        connectionDetails === null || connectionDetails === void 0 ? void 0 : connectionDetails.participantToken
+    ]);
+    const existingOrRefreshConnectionDetails = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "useConnectionDetails.useCallback[existingOrRefreshConnectionDetails]": async ()=>{
+            if (isConnectionDetailsExpired() || !connectionDetails) {
+                return fetchConnectionDetails();
+            } else {
+                return connectionDetails;
+            }
+        }
+    }["useConnectionDetails.useCallback[existingOrRefreshConnectionDetails]"], [
+        connectionDetails,
+        fetchConnectionDetails,
+        isConnectionDetailsExpired
+    ]);
+    return {
+        connectionDetails,
+        refreshConnectionDetails: fetchConnectionDetails,
+        existingOrRefreshConnectionDetails
+    };
+}
+_s(useConnectionDetails, "NH8W4tzeW9UDVzXajsbdMmlhzmc=");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/app.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// @ts-nocheck
+__turbopack_context__.s([
+    "App",
+    ()=>App
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$livekit$2d$client$2f$dist$2f$livekit$2d$client$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/livekit-client/dist/livekit-client.esm.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$livekit$2f$components$2d$react$2f$dist$2f$components$2d$CwZ8kStA$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__R__as__RoomAudioRenderer$3e$__ = __turbopack_context__.i("[project]/node_modules/@livekit/components-react/dist/components-CwZ8kStA.mjs [app-client] (ecmascript) <export R as RoomAudioRenderer>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$livekit$2f$components$2d$react$2f$dist$2f$contexts$2d$BGRNBsB8$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__R__as__RoomContext$3e$__ = __turbopack_context__.i("[project]/node_modules/@livekit/components-react/dist/contexts-BGRNBsB8.mjs [app-client] (ecmascript) <export R as RoomContext>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$livekit$2f$components$2d$react$2f$dist$2f$components$2d$CwZ8kStA$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__q__as__StartAudio$3e$__ = __turbopack_context__.i("[project]/node_modules/@livekit/components-react/dist/components-CwZ8kStA.mjs [app-client] (ecmascript) <export q as StartAudio>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$alert$2d$toast$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/alert-toast.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$session$2d$view$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/session-view.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$sonner$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/sonner.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$welcome$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/welcome.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$call$2d$modal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/call-modal.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useConnectionDetails$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hooks/useConnectionDetails.ts [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+const MotionWelcome = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].create(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$welcome$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]);
+_c = MotionWelcome;
+const MotionSessionView = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].create(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$session$2d$view$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]);
+_c1 = MotionSessionView;
+function App(param) {
+    let { appConfig } = param;
+    _s();
+    const room = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "App.useMemo[room]": ()=>new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$livekit$2d$client$2f$dist$2f$livekit$2d$client$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Room"]()
+    }["App.useMemo[room]"], []);
+    const [sessionStarted, setSessionStarted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [showCallModal, setShowCallModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [reportId, setReportId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [reportData, setReportData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const { refreshConnectionDetails, existingOrRefreshConnectionDetails } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useConnectionDetails$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(appConfig);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "App.useEffect": ()=>{
+            const onDisconnected = {
+                "App.useEffect.onDisconnected": ()=>{
+                    setSessionStarted(false);
+                    refreshConnectionDetails();
+                }
+            }["App.useEffect.onDisconnected"];
+            const onMediaDevicesError = {
+                "App.useEffect.onMediaDevicesError": (error)=>{
+                    (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$alert$2d$toast$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toastAlert"])({
+                        title: 'Encountered an error with your media devices',
+                        description: "".concat(error.name, ": ").concat(error.message)
+                    });
+                }
+            }["App.useEffect.onMediaDevicesError"];
+            room.on(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$livekit$2d$client$2f$dist$2f$livekit$2d$client$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RoomEvent"].MediaDevicesError, onMediaDevicesError);
+            room.on(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$livekit$2d$client$2f$dist$2f$livekit$2d$client$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RoomEvent"].Disconnected, onDisconnected);
+            return ({
+                "App.useEffect": ()=>{
+                    room.off(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$livekit$2d$client$2f$dist$2f$livekit$2d$client$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RoomEvent"].Disconnected, onDisconnected);
+                    room.off(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$livekit$2d$client$2f$dist$2f$livekit$2d$client$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RoomEvent"].MediaDevicesError, onMediaDevicesError);
+                }
+            })["App.useEffect"];
+        }
+    }["App.useEffect"], [
+        room,
+        refreshConnectionDetails
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "App.useEffect": ()=>{
+            let aborted = false;
+            if (sessionStarted && room.state === 'disconnected') {
+                Promise.all([
+                    room.localParticipant.setMicrophoneEnabled(true, undefined, {
+                        preConnectBuffer: appConfig.isPreConnectBufferEnabled
+                    }),
+                    existingOrRefreshConnectionDetails().then({
+                        "App.useEffect": (connectionDetails)=>room.connect(connectionDetails.serverUrl, connectionDetails.participantToken)
+                    }["App.useEffect"])
+                ]).then({
+                    "App.useEffect": async ()=>{
+                        setShowCallModal(true);
+                        if (reportId && reportData) {
+                            try {
+                                await room.localParticipant.publishData(new TextEncoder().encode(JSON.stringify({
+                                    type: 'medical_report',
+                                    id: reportId,
+                                    data: reportData
+                                })), {
+                                    reliable: true
+                                });
+                                // Also send a plain text hint some agents expect
+                                await room.localParticipant.publishData(new TextEncoder().encode("REPORT_ID:".concat(reportId)), {
+                                    reliable: true
+                                });
+                            } catch (e) {}
+                        }
+                    }
+                }["App.useEffect"]).catch({
+                    "App.useEffect": (error)=>{
+                        if (aborted) {
+                            // Once the effect has cleaned up after itself, drop any errors
+                            //
+                            // These errors are likely caused by this effect rerunning rapidly,
+                            // resulting in a previous run `disconnect` running in parallel with
+                            // a current run `connect`
+                            return;
+                        }
+                        (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$alert$2d$toast$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toastAlert"])({
+                            title: 'There was an error connecting to the agent',
+                            description: "".concat(error.name, ": ").concat(error.message)
+                        });
+                    }
+                }["App.useEffect"]);
+            }
+            return ({
+                "App.useEffect": ()=>{
+                    aborted = true;
+                    room.disconnect();
+                }
+            })["App.useEffect"];
+        }
+    }["App.useEffect"], [
+        room,
+        sessionStarted,
+        appConfig.isPreConnectBufferEnabled,
+        reportId,
+        reportData
+    ]);
+    const { startButtonText } = appConfig;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MotionWelcome, {
+                startButtonText: startButtonText,
+                onStartCall: ()=>setSessionStarted(true),
+                disabled: sessionStarted,
+                onAnalyzed: (id, data)=>{
+                    setReportId(id);
+                    setReportData(data);
+                },
+                initial: {
+                    opacity: 1
+                },
+                animate: {
+                    opacity: sessionStarted ? 0 : 1
+                },
+                transition: {
+                    duration: 0.5,
+                    ease: 'linear',
+                    delay: sessionStarted ? 0 : 0.5
+                }
+            }, "welcome", false, {
+                fileName: "[project]/components/app.tsx",
+                lineNumber: 106,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$livekit$2f$components$2d$react$2f$dist$2f$contexts$2d$BGRNBsB8$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__R__as__RoomContext$3e$__["RoomContext"].Provider, {
+                value: room,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$livekit$2f$components$2d$react$2f$dist$2f$components$2d$CwZ8kStA$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__R__as__RoomAudioRenderer$3e$__["RoomAudioRenderer"], {}, void 0, false, {
+                        fileName: "[project]/components/app.tsx",
+                        lineNumber: 121,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$livekit$2f$components$2d$react$2f$dist$2f$components$2d$CwZ8kStA$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__q__as__StartAudio$3e$__["StartAudio"], {
+                        label: "Start Audio"
+                    }, void 0, false, {
+                        fileName: "[project]/components/app.tsx",
+                        lineNumber: 122,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MotionSessionView, {
+                        appConfig: appConfig,
+                        disabled: !sessionStarted,
+                        sessionStarted: sessionStarted,
+                        onHangUp: ()=>{
+                            setSessionStarted(false);
+                            setShowCallModal(false);
+                            room.disconnect();
+                        },
+                        initial: {
+                            opacity: 0
+                        },
+                        animate: {
+                            opacity: sessionStarted ? 1 : 0
+                        },
+                        transition: {
+                            duration: 0.5,
+                            ease: 'linear',
+                            delay: sessionStarted ? 0.5 : 0
+                        }
+                    }, "session-view", false, {
+                        fileName: "[project]/components/app.tsx",
+                        lineNumber: 124,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$call$2d$modal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CallModal"], {
+                        open: showCallModal,
+                        onHangUp: ()=>{
+                            setShowCallModal(false);
+                            setSessionStarted(false);
+                            room.disconnect();
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/components/app.tsx",
+                        lineNumber: 142,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/app.tsx",
+                lineNumber: 120,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$sonner$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Toaster"], {}, void 0, false, {
+                fileName: "[project]/components/app.tsx",
+                lineNumber: 149,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/app.tsx",
+        lineNumber: 105,
+        columnNumber: 5
+    }, this);
+}
+_s(App, "pTcapNV2gOuU4lHVkqyzPtaw9zM=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useConnectionDetails$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+    ];
+});
+_c2 = App;
+var _c, _c1, _c2;
+__turbopack_context__.k.register(_c, "MotionWelcome");
+__turbopack_context__.k.register(_c1, "MotionSessionView");
+__turbopack_context__.k.register(_c2, "App");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+]);
+
+//# sourceMappingURL=_a7983cfb._.js.map

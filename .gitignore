@@ -1,0 +1,14 @@
+.env
+*.pyc
+__pycache__/
+venv/
+.DS_Store
+node_modules/
+google-credentials.json
+.env.local
+.env
+*.json
+google-credentials.json
+.env.local
+.env
+*.json
